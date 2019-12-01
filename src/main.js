@@ -43,13 +43,14 @@ function initShortcuts() {
 			key: 'F5',
 			press: _ => mainWindow.webContents.reloadIgnoringCache()
 		},
+		/*
 		fullscreen: {
 			key: 'F11',
 			press: _ => {
-				let full = !mainWindow.isFullScreen();
-				mainWindow.setFullScreen(full);
+				let focusedWindow = BrowserWindow.getFocusedWindow();
+				setTimeout(function(){ focusedWindow.setFullScreen(!focusedWindow.isFullScreen()) }, 500);
 			}
-		},
+		},*/
 		openDevTools: {
 			key: 'F12',
 			press: _ => mainWindow.webContents.openDevTools({ mode: 'undocked' }),

@@ -15,21 +15,23 @@
   "main": "main.js",
   "scripts": {
     "start": "electron .",
-	"pack": "electron-builder --dir",
-	"dist": "electron-builder"
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder"
   },
   "build": {
     "productName": "Krunker Wheelchair Client",
     "appId": "krunker.wc.client",
     "win": {
-      "target": ["portable"]
+      "target": [
+        "portable"
+      ]
     },
     "portable": {
       "artifactName": "krunker_wheelchair.exe"
     },
     "directories": {
-      "output": "../", 
-      "app": "./", 
+      "output": "../",
+      "app": "./",
       "buildResources": "./resources"
     }
   },

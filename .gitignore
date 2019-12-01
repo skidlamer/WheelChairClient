@@ -1,3 +1,5 @@
 src/node_modules
 src/package-lock.json
 **/*.exe
+/win-unpacked
+/builder-effective-config.yaml

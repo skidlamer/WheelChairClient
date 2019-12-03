@@ -26,6 +26,9 @@
         "portable"
       ]
     },
+    "mac": {
+      "category": "public.app-category.games"
+    },
     "portable": {
       "artifactName": "krunker_wheelchair.exe"
     },
